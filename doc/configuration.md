@@ -24,6 +24,7 @@ Within the `[stream]` section there are some global parameters valid for all `so
   - `ogg`: lossy codec
   - `opus`: lossy low latency codec, only supports 48kHz, if your stream has a different sample rate, automatic resampling will be applied, introducing further latecy
   - `pcm`: lossless, uncompresssed. No latency.
+  - `null`: used to hide a source from the UI when it is strictly an input for meta streams
 - `chunk_ms`: Default source stream read chunk size [ms]. The server will continously read this number of milliseconds from the source into a buffer, before this buffer is passed to the encoder (the `codec` above)
 - `buffer`: Buffer [ms]. The end-to-end latency, from capturing a sample on the server until the sample is played-out on the client
 - `send_to_muted`: `true` or `false`: Send audio to clients that are muted
