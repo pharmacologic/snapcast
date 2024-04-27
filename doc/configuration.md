@@ -271,7 +271,7 @@ meta:///<name of source#1>/<name of source#2>/.../<name of source#N>?name=<name>
 ```
 
 Plays audio from the active source with the highest priority, with `source#1` having the highest priority and `source#N` the lowest.  
-Use `codec=null` for stream sources that should only serve as input for meta streams
+Use `codec=null` for stream sources that should only serve as input for meta streams (will effectively hide the source from the list on the front-end).
 
 ## Streaming clients
 
